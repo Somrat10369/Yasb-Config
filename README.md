@@ -10,10 +10,10 @@
 
   | Widget | Preview |
   |--------|---------|
-  | AI Chat | ![AI Chat](https://raw.githubusercontent.com/your-username/Win-11-Config/main/config/YASB/assets/yasb_widget_showcase_ai-chat.png) |
-  | Memory Popup | ![Memory](https://raw.githubusercontent.com/your-username/Win-11-Config/main/config/YASB/assets/yasb_widget_showcase_memory.png) |
-  | Notes | ![Notes](https://raw.githubusercontent.com/your-username/Win-11-Config/main/config/YASB/assets/yasb_widget_showcase_notes.png) |
-  | Todo | ![Todo](https://raw.githubusercontent.com/your-username/Win-11-Config/main/config/YASB/assets/yasb_widget_showcase_todo.png) |
+  | AI Chat | ![AI Chat](/assets/yasb_widget_showcase_ai-chat.png) |
+  | Memory Popup | ![Memory](/assets/yasb_widget_showcase_memory.png) |
+  | Notes | ![Notes](/assets/yasb_widget_showcase_notes.png) |
+  | Todo | ![Todo](/assets/yasb_widget_showcase_todo.png) |
 
 ---
 
