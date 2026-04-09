@@ -10,7 +10,7 @@
 
   | Widget | Preview |
   |--------|---------|
-  | Yasb Bar| [Bar] (/assets/yasb_bar_yasb-bar_20260406_004705.png) |
+  | Yasb Bar| [Bar] (assets/yasb_bar_yasb-bar_20260406_004705.png) |
   | AI Chat | ![AI Chat](/assets/yasb_widget_showcase_ai-chat.png) |
   | Memory Popup | ![Memory](/assets/yasb_widget_showcase_memory.png) |
   | Notes | ![Notes](/assets/yasb_widget_showcase_notes.png) |
