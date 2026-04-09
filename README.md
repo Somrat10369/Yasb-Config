@@ -41,7 +41,7 @@
 | ✅ Todo | Task manager with categories (Urgent, Important, Soon, Today) |
 | 🗑️ Recycle Bin | Live item count with fill/empty icons |
 | 🤖 AI Chat | Ollama-powered local LLM chat (Qwen 3.5, Qwen Coder) |
-| 🪟 GlazeWM Workspaces | Tiling WM workspace switcher with scroll support |
+| ⭕ GlazeWM Workspaces | Tiling WM workspace switcher with scroll support |
 
 ### Center
 | Widget | Description |
