@@ -1,4 +1,3 @@
-
 # GlazeWM | Catppuccin Mocha | Glazing Mocha
 # Place this file at: C:/users/{username}/.config/yasb/config.yaml 
 # You need to Replace {username} with your username and insert your wallpaper path at line 76. also provide the info at line 305 to use the ai chat.
@@ -7,12 +6,10 @@ watch_config: true
 debug: false
 update_check: true
 show_systray: true
-
 glazewm:
   start_command: "glazewm.exe start"
   stop_command: "glazewm.exe command wm-exit"
   reload_command: "glazewm.exe command wm-exit && glazewm.exe start"
-  
 bars:
   yasb-bar:
     screens: ['primary']
@@ -41,7 +38,6 @@ bars:
     animation:
       enabled: true
       duration: 500
-      
     widgets:
       left:
         - "power_menu"
@@ -49,25 +45,24 @@ bars:
         - "todo"
         - "bin"
         - "ai_chat"
-        - "glazewm_workspaces"                                     
+        - "glazewm_workspaces"
       center:
         - "cpu"
         - "gpu"
         - "pomodoro"
         - "memory"
-        - "disk"        
-      right:          
+        - "disk"
+      right:
         - "systray" 
-        - "wallpapers"          
-        - "brightness"        
+        - "wallpapers"
+        - "brightness"
         - "bluetooth"
         - "wifi"
-        - "open_meteo"       
+        - "open_meteo"
         - "volume"
-        - "wifi_error"
+        - "ethernet"
         - "clock"
         - "notifications"
-        
 widgets:
   wallpapers:
     type: "yasb.wallpapers.WallpapersWidget"
@@ -90,7 +85,6 @@ widgets:
       callbacks:
         on_left: "toggle_gallery"
         on_right: "toggle_label"
-        
   bin:
     type: "yasb.recycle_bin.RecycleBinWidget"
     options:
@@ -109,7 +103,6 @@ widgets:
         color: "black"
         radius: 3
         offset: [ 1, 1 ]
-        
   glazewm_workspaces:
     type: "glazewm.workspaces.GlazewmWorkspacesWidget"
     options:
@@ -119,7 +112,6 @@ widgets:
       monitor_exclusive: true
       enable_scroll_switching: true
       animation: true
-      
   clock:
     type: "yasb.clock.ClockWidget"
     options:
@@ -149,7 +141,6 @@ widgets:
         enabled: true
         type: "fadeInOut"
         duration: 200
-        
   pomodoro:
     type: "yasb.pomodoro.PomodoroWidget"
     options:
@@ -191,7 +182,6 @@ widgets:
         enabled: true
         type: "fadeInOut"
         duration: 200
-        
   notes:
     type: "yasb.notes.NotesWidget"
     options:
@@ -222,8 +212,7 @@ widgets:
       animation:
         enabled: true
         type: "fadeInOut"
-        duration: 200
-        
+        duration: 200 
   todo:
     type: "yasb.todo.TodoWidget"
     options:
@@ -267,7 +256,6 @@ widgets:
         enabled: true
         type: "fadeInOut"
         duration: 200
-        
   ai_chat:
     type: "yasb.ai_chat.AiChatWidget"
     options:
@@ -304,12 +292,11 @@ widgets:
           models:
             - name: "" #you can find the name using 'ollama list'
               label: "You have to set it up in the config.yaml" 
-              default: true                      
+              default: true
       animation:
         enabled: true
         type: "fadeInOut"
         duration: 200
-        
   notifications:
     type: "yasb.notifications.NotificationsWidget"
     options:
@@ -328,7 +315,6 @@ widgets:
         enabled: true
         type: "fadeInOut"
         duration: 200
-        
   cpu:
     type: "yasb.cpu.CpuWidget"
     options:
@@ -370,8 +356,7 @@ widgets:
       animation:
         enabled: true
         type: "fadeInOut"
-        duration: 200
-        
+        duration: 200 
   memory:
     type: "yasb.memory.MemoryWidget"
     options:
@@ -403,7 +388,6 @@ widgets:
         enabled: true
         type: "fadeInOut"
         duration: 200
-        
   disk:
     type: "yasb.disk.DiskWidget"
     options:
@@ -432,7 +416,6 @@ widgets:
         enabled: true
         type: "fadeInOut"
         duration: 200
-        
   gpu:
     type: "yasb.gpu.GpuWidget"
     options:
@@ -465,7 +448,6 @@ widgets:
         enabled: true
         type: "fadeInOut"
         duration: 200
-        
   brightness:
     type: "yasb.brightness.BrightnessWidget"
     options:
@@ -496,7 +478,6 @@ widgets:
         enabled: true
         type: "fadeInOut"
         duration: 200
-        
   volume:
     type: "yasb.volume.VolumeWidget"
     options:
@@ -532,7 +513,6 @@ widgets:
         enabled: true
         type: "fadeInOut"
         duration: 200
-        
   bluetooth:
     type: "yasb.bluetooth.BluetoothWidget"
     options:
@@ -553,7 +533,6 @@ widgets:
         enabled: true
         type: "fadeInOut"
         duration: 200
-        
   wifi:
     type: "yasb.wifi.WifiWidget"
     options:
@@ -588,7 +567,6 @@ widgets:
         enabled: true
         type: "fadeInOut"
         duration: 200
-        
   open_meteo:
     type: "yasb.open_meteo.OpenMeteoWidget"
     options:
@@ -605,7 +583,7 @@ widgets:
       animation:
         enabled: true
         type: "fadeInOut"
-        duration: 200    
+        duration: 200
       weather_card:
         blur: true
         round_corners: true
@@ -644,8 +622,7 @@ widgets:
         enabled: true
         color: "black"
         radius: 3
-        offset: [1, 1]      
-        
+        offset: [1, 1]
   systray:
     type: "yasb.systray.SystrayWidget"
     options:
@@ -661,15 +638,14 @@ widgets:
       show_volume: false
       show_network: true
       tooltip: true
-  wifi_error:
+  ethernet:
     type: "yasb.custom.CustomWidget"
     options:
-      class_name: "wifi_error"
+      class_name: "ethernet"
       label: "<span color='#fab387'>󰤭</span>"
       label_alt: "Network Diagnostic Required"
       callbacks:
-        on_left: 'exec powershell.exe -Command "Start-Process https://www.youtube.com/watch?v=dQw4w9WgXcQ"'
-        
+        on_left: 'exec powershell.exe -Command "Start-Process https://rroll.to/iHgSMg"'        
   power_menu:
     type: "yasb.power_menu.PowerMenuWidget"
     options:
