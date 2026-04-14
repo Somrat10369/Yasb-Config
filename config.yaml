@@ -1,7 +1,7 @@
 
 # GlazeWM | Catppuccin Mocha | Glazing Mocha
 # Place this file at: C:/users/{username}/.config/yasb/config.yaml 
-# You need to Replace {username} with your username and insert your wallpaper path at line 71. also provide the info at line 293 to use the ai chat.
+# You need to Replace {username} with your username and insert your wallpaper path at line 76. also provide the info at line 305 to use the ai chat.
 watch_stylesheet: true
 watch_config: true
 debug: false
